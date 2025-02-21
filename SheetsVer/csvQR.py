@@ -6,6 +6,6 @@ def read_csv(file_path):
         reader = csv.reader(csvfile)
         return [row[0] for row in reader]  # One column best case scenario
 
-# change acording user's needs
-data_to_encode = read_csv("data.csv")
-generate_qr(data_to_encode, "output_qr_codes")
+# change path acording user's needs
+data_to_encode = read_csv("./qrs.csv")
+generate_qr(data_to_encode, "./qrs")
